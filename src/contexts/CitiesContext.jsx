@@ -1,5 +1,6 @@
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useReducer,
@@ -89,8 +90,8 @@ const CitiesProvider = ({ children }) => {
     fetchCities();
   }, []);
 
-  async function getCity(id) {
-    if(Number(id) === currentCity,id) return;
+  const getCity = useCallback( async function getCity(id) {
+    if(Number(id) === currentCity.id) return;
     dispatch({ type: "loading" });
     try {
       // setIsLoading(true);
@@ -107,7 +108,7 @@ const CitiesProvider = ({ children }) => {
     // finally {
     //   setIsLoading(false);
     // }
-  }
+  }, [currentCity.id])
 
   async function createCity(newCity) {
     dispatch({ type: "loading" });
