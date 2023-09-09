@@ -1,8 +1,27 @@
-# React + Vite
+# WordWise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+"WordWise" is a project that utilizes React, React Router, Context API with useReducer, and Leaflet to create an engaging web application for tracking and documenting personal adventures and travels.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a code along project that was made while watching The Ultimate React Course 2023: React, Redux & More by Jonas Schmedtmann
+
+## Live Preview
+
+
+
+
+## ScreenShots
+
+![App Screenshot](/public/screenshot.png)
+
+## Start the Project
+
+In the project directory, you can run:
+
+`npm install`
+
+`npm run dev`
+
+`npm run server`
+
